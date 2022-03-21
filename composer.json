@@ -1,0 +1,25 @@
+{
+    "name": "dottwatson/laravel-context",
+    "type": "library",
+    "description": "Handle different data containers and use them as separate contexts for your application",
+    "keywords": ["laravel","context"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dottwatson\\Context\\": "src/"
+        },
+        "files":[
+            "src/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dottwatson\\Context\\ContextServiceProvider"
+            ],
+            "aliases": {
+                "Context": "Dottwatson\\Context\\Facade"
+            }
+        }
+    }
+}
